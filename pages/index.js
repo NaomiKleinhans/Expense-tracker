@@ -8,6 +8,7 @@ import {
 	doc
 } from 'firebase/firestore'
 import { db } from '../firebase/initFirebase' // Import the initialized Firestore database
+import Image from 'next/image'
 
 export default function Home() {
 	const [items, setItems] = useState([])
@@ -77,7 +78,9 @@ export default function Home() {
 
 	return (
 		<main className='flex min-h-screen flex-col items-center justify-between sm:p-24 p-4'>
-			<img
+			<Image
+				width='52'
+				height='52'
 				src='/logo.png'
 				alt='Logo'
 				className='w-52 absolute top-2 left-4'
