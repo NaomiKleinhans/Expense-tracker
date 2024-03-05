@@ -79,15 +79,17 @@ export default function Home() {
 	return (
 		<main className='flex min-h-screen flex-col items-center justify-between sm:p-24 p-4'>
 			<Image
-				width='52'
-				height='52'
+				width='200'
+				height='200'
 				src='/logo.png'
 				alt='Logo'
-				className='w-52 absolute top-2 left-4'
+				className='absolute top-2 left-4'
 			/>
 			<div className='z-10 w-full max-w-5xl items-center justify-between font-mono text-sm '>
 				<h1 className='text-4xl p-4 text-center'>Expense Tracker</h1>
-				<p className='text-white text-sm mb-4 text-center'>Expenses Date: {currentDate}</p>
+				<p className='text-white text-sm mb-4 text-center'>
+					Expenses Date: {currentDate}
+				</p>
 				<div className='bg-[#3f2974] p-4 rounded-lg'>
 					<form className='grid grid-cols-6 items-center text-black'>
 						<input
